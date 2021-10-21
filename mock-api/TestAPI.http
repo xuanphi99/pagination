@@ -1,0 +1,33 @@
+# run json-server : npm run dev
+# run file request install and use extennsion rest client in vs code
+
+# @name getALLcategories
+GET http://localhost:8080/v1/api/categories
+
+###
+# @name getBookByID
+GET http://localhost:8080/v1/api/books/?id=12
+###
+# @name getALLbooksBycategoryID
+GET http://localhost:8080/v1/api/books/
+
+###
+POST http://localhost:8080/v1/api/books 
+Content-Type:  : application/json
+
+{
+    
+    "author": "Nguyen Van A",
+    "img": "FS01",
+    "title": "HTML ,Dynamic Identity Manager",
+    "desc": "Rerum veniet velit explicabo esse aut ut.",
+    "content": "aut velit est",
+    "categoryID": "1"
+
+}
+
+###
+# @name Paginate
+
+GET http://localhost:8080/v1/api/books?categoryID=1&_page=3&_limit=5
+
